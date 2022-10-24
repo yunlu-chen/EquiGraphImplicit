@@ -196,7 +196,7 @@
           <h2 class="title is-5">Room scenes</h2>
 
           <center>
-          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="90%" width="90%">
+          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
             <source src="./resources/res2.mp4" type="video/mp4">
           </video>
           </center>
@@ -208,10 +208,15 @@
 
 
           <h2 class="title is-5">Reconstruction of shapes under unseen transformations</h2>
-          <p>We evaluate 3D implicit surface reconstruction under unseen similarity transformations, including rotation, translation and scaling.</p>
           <video id="res1" autoplay="" muted="" loop="" playsinline="" height="130%" width="130%">
             <source src="./resources/res4.mp4" type="video/mp4">
           </video>
+          <p>We evaluate 3D implicit surface reconstruction with under unseen similarity transformations, including rotation, translation and scaling.</p>
+          
+          <p>Our GraphONet is more robust to transformations than other baseline non-equivariant methods. Standard implicit representation method with global latent embedding ONet fails to reconstruct local details and it cannot handle transformations. Compared to ConvONets the grid method with local feature embeddings, GraphONet generates significantly less artifacts,
+especially under rotation.  
+</p>
+          <p>Our E-GraphONet with equivariant layers further guarantees generalization to all similarity transformations, while the baseline GraphONet fails under extreme scaling. Previous rotation-equivariant method VN-ONet considers only rotation and the global latent embedding limits detailed reconstruction.</p>
         </div>
       
       </div>

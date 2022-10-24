@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="3D Equivariant Graph Implicit Functions">
+  <meta name="keywords" content="Equivariance, Implicit Functions, Reconstruction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Equivariant Graph Implicit Functions</title>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">3D Equivariant Graph Implicit Functions</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yunlu-chen.github.io/">Yunlu Chen</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://basurafernando.github.io/">Basura Fernando</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="https://homepages.inf.ed.ac.uk/hbilen/">Hakan Bilen</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://niessnerlab.org/">Matthias Nießner</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.egavves.com/">Efstratios Gavves</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Amsterdam,</span>
+            <span class="author-block"><sup>2</sup>A*STAR</span>
+            <span class="author-block"><sup>3</sup>University of Edinburgh</span>
+            <span class="author-block"><sup>4</sup>Technical University of Munich</span>
+          </div>
+
+          <div class="is-size-5 has-text-weight-semibold mt-3 publication-title">
+            <span class="author-block">ECCV 2022</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://staff.fnwi.uva.nl/y.chen3/3DEGIF/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/yunlu-chen/equivariant-graph-implicit"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/41UPVdlXg94?rel=0&amp;showinfo=0"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <br><br>
+      <h2 class="subtitle has-text-centered">
+        We embed 3D implicit neural representations in graphs to achieve high-fidelity equivariant 3D reconstruction.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In recent years, neural implicit representations have made remarkable progress in modeling of 3D shapes with arbitrary topology. In this work, we address two key limitations of such representations, in failing to capture local 3D geometric fine details, and to learn from and generalize to shapes with unseen 3D transformations. To this end, we introduce a novel family of graph implicit functions with equivariant layers that facilitates modeling fine local details and guaranteed robustness to various groups of geometric transformations, through local k-NN graph embeddings with sparse point set observations at multiple resolutions. Our method improves over the existing rotation-equivariant implicit function from 0.69 to 0.89 (IoU) on the ShapeNet reconstruction task. We also show that our equivariant implicit function can be extended to other types of similarity transformations and generalizes to unseen translations and scaling.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <div class="content">
+          <center>
+            <h2 class="title is-3"> Method</h2>
+          </center>
+
+          <center><img  width="75%" src="./resources/fig1.jpg"></center>
+          <p>Our equivariant graph implicit function infers the implicit field for a 3D shape, given a sparse point cloud observation. When a transformation (rotation, translation, or/and scaling) is applied to the observation, the resulting implicit field is guaranteed to be the same as applying a corresponding transformation to the inferred implicit field from the untransformed input (middle). The property of equivariance enables generalization to unseen transformations, under which existing models often struggle (right).</p>
+
+          <h2 class="title is-4">Graph-structured local implicit feature embedding</h2>
+          <center><img  width="120%" src="./resources/fig2.jpg"></center>
+          <p>To achieve high fidelity 3D reconstruction in local details, we embed implicit function in local k-NN graphs. The architecture is robust to similarity geometric transformations, while existing local implicit embedding methods based on convolutional grid structure are sensitive to these transformations.</p>
+
+          <h2 class="title is-4">Equivariant graph convolution layers</h2>
+          <center><img  width="70%" src="./resources/fig4_hybrid.jpg"></center>
+          <p>We incorporate equivariant layer design with hybrid scalar and vector features  for graph convolution layers, which facilitates numeric robustness against geometric transformations. The equivariant mechanism was adapted from Vector Neurons [Deng et al. ICCV 2021] and EGNN [Satorras et al. ICML 2021]. </p>
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+
+        <div class="content">
+          <center>
+            <h2 class="title is-3"> Results</h2>
+          </center>
+          <p>Our models are denoted GraphONet, the graph implicit function without equivariant layers, or E-GraphONet, with equivariant layers.</p>
+            
+
+          <h2 class="title is-5">ShapeNet objects</h2>
+          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
+            <source src="./resources/res1.mp4" type="video/mp4">
+          </video>
+          <p>Aside from the merit of transform-robustness, our method benefits high-fidelity 3D reconstruction in general even for canonically oriented shapes. Our graph mechanism allows focusing on more critical areas with surface points.</p>
+
+          <h2 class="title is-5">Room scenes</h2>
+
+          <center>
+          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="90%" width="90%">
+            <source src="./resources/res2.mp4" type="video/mp4">
+          </video>
+          </center>
+          <br>
+          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
+            <source src="./resources/res3.mp4" type="video/mp4">
+          </video>
+          <p>The graph feature embedding mechanism is translation-equivariant, so our methods scale to scene-level reconstruction.</p>
+
+
+          <h2 class="title is-5">Reconstruction of shapes under unseen transformations</h2>
+          <p>We evaluate 3D implicit surface reconstruction under unseen similarity transformations, including rotation, translation and scaling.</p>
+          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="130%" width="130%">
+            <source src="./resources/res4.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2022equivariant,
+  author    = {Chen, Yunlu and Fernando, Basura and Bilen, Hakan and Nie{\ss}ner, Matthias and Gavves, Efstratios},
+  title     = {3D Equivariant Graph Implicit Functions},
+  journal   = {ECCV},
+  year      = {2022},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            The website template was borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -184,26 +184,25 @@
           <center>
             <h2 class="title is-3"> Results</h2>
           </center>
-          <p>Our models are denoted GraphONet, the graph implicit function without equivariant layers, or E-GraphONet, with equivariant layers.</p>
+          <p>Our models are denoted <b>GraphONet</b>, the graph implicit function without equivariant layers, and <b>E-GraphONet</b>, with equivariant layers for graph convolutions.</p>
             
 
-          <h2 class="title is-5">ShapeNet objects</h2>
+          <h2 class="title is-5">Object reconstruction</h2>
                     <p>Aside from the merit of transform-robustness, our method benefits high-fidelity 3D reconstruction in general even for canonically oriented shapes. Our graph mechanism allows focusing on more critical areas with surface points.</p>
 
           <video id="res1" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
             <source src="./resources/res1.mp4" type="video/mp4">
           </video>
 
-          <h2 class="title is-5">Room scenes</h2>
+          <h2 class="title is-5">Scene reconstruction</h2>
           <p>The graph feature embedding mechanism is translation-equivariant, so our methods scale to scene-level reconstruction.</p>
+          <p>We show results on Synthetic Rooms and ScanNet.</p>
 
-          <center>
-          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
+          <video id="res2" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
             <source src="./resources/res2.mp4" type="video/mp4">
           </video>
-          </center>
           <br>
-          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
+          <video id="res3" autoplay="" muted="" loop="" playsinline="" height="100%" width="100%">
             <source src="./resources/res3.mp4" type="video/mp4">
           </video>
 
@@ -216,7 +215,7 @@ especially under rotation.
 </p>
           <p>Our E-GraphONet with equivariant layers further guarantees generalization to all similarity transformations, while the baseline GraphONet fails under extreme scaling. Previous rotation-equivariant method VN-ONet considers only rotation and the global latent embedding limits detailed reconstruction.</p>
 
-          <video id="res1" autoplay="" muted="" loop="" playsinline="" height="130%" width="130%">
+          <video id="res4" autoplay="" muted="" loop="" playsinline="" height="100%" width="130%">
             <source src="./resources/res4.mp4" type="video/mp4">
           </video>
         </div>
